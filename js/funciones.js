@@ -58,7 +58,7 @@ sendButton.style.display = 'none';
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer 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',
+            'Authorization': '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',
           },
           body: JSON.stringify({
             model: 'gpt-4o-mini',
