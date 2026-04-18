@@ -1,8 +1,7 @@
 const chatMessages = document.getElementById('chatMessages');
-    const chatForm = document.getElementById('chatForm');
-    const userInput = document.getElementById('userInput');
-
-    const sendButton = chatForm.querySelector('button');
+const chatForm = document.getElementById('chatForm');
+const userInput = document.getElementById('userInput');
+const sendButton = chatForm.querySelector('button');
 
 // Mostrar botón solo si hay texto
 userInput.addEventListener('input', () => {
@@ -12,14 +11,14 @@ userInput.addEventListener('input', () => {
 userInput.addEventListener('keydown', (e) => {
   if (e.key === 'Enter' && !e.shiftKey) {
     e.preventDefault();
-    chatForm.requestSubmit(); // Trigger form submit
+    chatForm.requestSubmit();
   }
 });
 
 // Ocultarlo por defecto al cargar
 sendButton.style.display = 'none';
 
-    function appendMessage(text, sender) {
+function appendMessage(text, sender) {
   const wrapper = document.createElement('div');
   wrapper.classList.add('d-flex', 'flex-column', sender === 'user' ? 'align-items-end' : 'align-items-start', 'mb-2');
 
@@ -37,63 +36,47 @@ sendButton.style.display = 'none';
   chatMessages.scrollTop = chatMessages.scrollHeight;
 }
 
-    chatForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const userMessage = userInput.value.trim();
-      if (!userMessage) return;
+chatForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const userMessage = userInput.value.trim();
+  if (!userMessage) return;
 
-      appendMessage(userMessage, 'user');
-      userInput.value = '';
+  appendMessage(userMessage, 'user');
+  userInput.value = '';
 
-      const typingIndicator = document.createElement('div');
-      typingIndicator.classList.add('message', 'bot');
-      typingIndicator.textContent = 'Dame un momento...';
-      chatMessages.appendChild(typingIndicator);
-      chatMessages.scrollTop = chatMessages.scrollHeight;
+  const typingIndicator = document.createElement('div');
+  typingIndicator.classList.add('message', 'bot');
+  typingIndicator.textContent = 'Dame un momento...';
+  chatMessages.appendChild(typingIndicator);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
 
-
-
-      try {
-        const response = await fetch('https://api.openai.com/v1/chat/completions', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': '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',
-          },
-          body: JSON.stringify({
-            model: 'gpt-4o-mini',
-            store: true,
-            messages: [
-                { role: 'system', content: 'Eres un psicologo que sigue la corriente conductista dandole seguimiento a tu paciente' },
-              { role: 'user', content: userMessage }
-            ],
-            temperature: 0.2,
-            max_tokens: 1500
-          })
-        });
-
-        chatMessages.removeChild(typingIndicator);
-
-        if (response.ok) {
-          const data = await response.json();
-          const botReply = data.choices[0].message.content;
-          appendMessage(botReply, 'bot');
-        } else {
-          appendMessage('Error: No se pudo obtener una respuesta del modelo.', 'bot');
-        }
-      } catch (error) {
-        chatMessages.removeChild(typingIndicator);
-        appendMessage('Error: ' + error.message, 'bot');
-      }
+  try {
+    // CAMBIO PRINCIPAL: Ahora le hacemos fetch a TU servidor intermediario
+    const response = await fetch('http://localhost:3000/api/chat', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      // Solo enviamos el mensaje, el backend se encarga de estructurarlo para OpenAI
+      body: JSON.stringify({ message: userMessage })
     });
 
-    document.getElementById('logoutBtn').addEventListener('click', () => {
-  // Si usas localStorage para tokens o nombres de usuario, aquí podrías limpiar:
-  // localStorage.removeItem('token');
-  // localStorage.removeItem('username');
+    chatMessages.removeChild(typingIndicator);
 
-  // Redirige a la página de login o inicio
-  window.location.href = 'login.php'; // Cambia esto si usas otra ruta
+    if (response.ok) {
+      const data = await response.json();
+      // Leemos la respuesta tal como nos la devuelve OpenAI a través de nuestro backend
+      const botReply = data.choices[0].message.content;
+      appendMessage(botReply, 'bot');
+    } else {
+      appendMessage('Error: No se pudo obtener una respuesta del servidor.', 'bot');
+    }
+  } catch (error) {
+    chatMessages.removeChild(typingIndicator);
+    appendMessage('Error: ' + error.message, 'bot');
+  }
 });
 
-
+document.getElementById('logoutBtn').addEventListener('click', () => {
+  window.location.href = 'login.php';
+});
