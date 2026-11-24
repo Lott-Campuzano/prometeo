@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="referrer" content="no-referrer" />
+  <title>Prometeo — fuego para lo que no pudiste decir</title>
+  <meta
+    name="description"
+    content="Un espacio anónimo para desahogarte. Sin cuentas, sin historial: lo que escribes se va con la pestaña."
+  />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <a class="brand" href="/" aria-label="Prometeo, empezar de nuevo">
+        <svg class="brand-flame" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path
+            d="M12.6 1.5c2.4 3.6 5.9 5.8 5.9 10.1A6.5 6.5 0 0 1 5.5 11.6c0-1.9.7-3.6 2-5 .1 1.6.7 2.8 2 3.6.3-3.3 1.3-6.2 3.1-8.7Z"
+            fill="currentColor"
+            opacity=".92"
+          />
+          <path
+            d="M12 13.2c1.1 1.5 2.1 2.4 2.1 3.9a2.1 2.1 0 0 1-4.2 0c0-1.1.7-2.1 2.1-3.9Z"
+            fill="currentColor"
+            opacity=".45"
+          />
+        </svg>
+        <span class="brand-name">Prometeo</span>
+      </a>
+
+      <button id="resetBtn" class="ghost-btn" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path
+            d="M12 5V2.5L8 6l4 3.5V7a5 5 0 1 1-5 5H5a7 7 0 1 0 7-7Z"
+            fill="currentColor"
+          />
+        </svg>
+        <span>Nuevo fuego</span>
+      </button>
+    </header>
+
+    <section class="chat" aria-label="Conversación">
+      <div
+        id="chatLog"
+        class="chat-log"
+        role="log"
+        aria-live="polite"
+        aria-relevant="additions text"
+      ></div>
+
+      <form id="chatForm" class="composer" autocomplete="off">
+        <label class="sr-only" for="userInput">Escribe lo que necesites soltar</label>
+        <textarea
+          id="userInput"
+          class="composer-input"
+          rows="1"
+          maxlength="2000"
+          placeholder="Escribe lo que necesitas soltar…"
+          required
+          autocomplete="off"
+          autocapitalize="sentences"
+          spellcheck="true"
+        ></textarea>
+        <button id="sendBtn" class="send-btn" type="submit" aria-label="Enviar mensaje" disabled>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M4 11.6 20 4l-4.6 16-3.3-6.2L4 11.6Z" fill="currentColor" />
+          </svg>
+        </button>
+      </form>
+    </section>
+
+    <footer class="foot">
+      <p class="privacy">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path
+            d="M12 2a4 4 0 0 0-4 4v2H6.8A1.8 1.8 0 0 0 5 9.8v9.4A1.8 1.8 0 0 0 6.8 21h10.4a1.8 1.8 0 0 0 1.8-1.8V9.8A1.8 1.8 0 0 0 17.2 8H16V6a4 4 0 0 0-4-4Zm-2 6V6a2 2 0 1 1 4 0v2h-4Z"
+            fill="currentColor"
+          />
+        </svg>
+        Sin cuentas, sin cookies, sin historial. Se borra sola a los 20 minutos sin actividad.
+      </p>
+      <p class="disclaimer">
+        Prometeo escucha, pero no es terapia ni sustituye atención profesional. Si estás en
+        peligro inmediato, llama a los servicios de emergencia de tu país.
+      </p>
+    </footer>
+  </main>
+
+  <script src="/js/app.js" defer></script>
+</body>
+</html>

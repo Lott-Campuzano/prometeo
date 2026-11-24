@@ -1,27 +1,34 @@
 {
   "name": "prometeo",
-  "version": "1.0.0",
-  "description": "Prometeo es un chatbot para consulta prediagnostica especializado en transtornos de ansiedad",
-  "main": "index.js",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Espacio anónimo y efímero para desahogarse. Sin cuentas, sin historial.",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Lott-Campuzano/prometeo.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "chat",
+    "anonimo",
+    "efimero",
+    "desahogo"
+  ],
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Lott-Campuzano/prometeo/issues"
   },
   "homepage": "https://github.com/Lott-Campuzano/prometeo#readme",
   "dependencies": {
-    "cors": "^2.8.6",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "openai": "^6.34.0"
+    "express": "^5.2.1"
   }
 }
