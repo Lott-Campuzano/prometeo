@@ -1,0 +1,19 @@
+---
+/** Página 404 mínima, coherente con el resto del sitio. */
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Página no encontrada" current="404" mainClass="not-found">
+  <section class="wrap">
+    <p class="eyebrow">404</p>
+    <h1 class="page-title">Esta página no existe.</h1>
+    <p class="lede">
+      Puede que el enlace esté mal escrito o que la página ya no esté. La conversación y las
+      líneas de ayuda siguen aquí.
+    </p>
+    <div class="page-actions">
+      <a class="btn btn-primary" href="/">Volver a Prometeo</a>
+      <a class="btn btn-soft" href="/ayuda">Líneas de ayuda</a>
+    </div>
+  </section>
+</BaseLayout>

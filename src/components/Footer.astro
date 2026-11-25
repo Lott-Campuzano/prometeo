@@ -1,0 +1,28 @@
+---
+/** Pie de página: privacidad, límites del servicio y enlaces de interés. */
+import Icon from './Icon.astro';
+import { CHAT, SITE } from '../config.js';
+
+const idleMinutes = Math.round(CHAT.inactivityMs / 60_000);
+---
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p class="footer-privacy">
+      <Icon name="shield" size={17} />
+      <span>Sin cuentas, sin cookies y sin historial. Se borra sola a los {idleMinutes} minutos sin actividad.</span>
+    </p>
+
+    <p class="footer-disclaimer">
+      Prometeo escucha, pero no es terapia ni sustituye la atención profesional. Si estás en
+      peligro inmediato, llama a los servicios de emergencia de tu país.
+      <a href="/ayuda">Líneas de ayuda</a>.
+    </p>
+
+    <p class="footer-meta">
+      <a href={SITE.repo} target="_blank" rel="noopener noreferrer">Código abierto</a>
+      <span aria-hidden="true">·</span>
+      <a href="/ayuda">Fuentes y fecha de revisión</a>
+    </p>
+  </div>
+</footer>

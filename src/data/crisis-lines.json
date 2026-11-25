@@ -1,0 +1,1256 @@
+{
+  "reviewed": "2026-11-24",
+  "reviewedLabel": "24 de noviembre de 2026",
+  "note": "Los números y horarios pueden cambiar. Si una línea no responde, llama al número de emergencias de tu país o consulta Find A Helpline.",
+  "global": {
+    "name": "Find A Helpline",
+    "url": "https://findahelpline.com/es",
+    "note": "Directorio internacional de líneas de ayuda gratuitas y confidenciales."
+  },
+  "sources": [
+    {
+      "name": "Find A Helpline",
+      "url": "https://findahelpline.com/es"
+    },
+    {
+      "name": "Wikipedia · List of suicide crisis lines",
+      "url": "https://en.wikipedia.org/wiki/List_of_suicide_crisis_lines"
+    },
+    {
+      "name": "OMS · Suicidio",
+      "url": "https://www.who.int/es/news-room/fact-sheets/detail/suicide"
+    }
+  ],
+  "countries": [
+    {
+      "code": "CA",
+      "name": "Canadá",
+      "region": "América",
+      "source": "https://988.ca/",
+      "emergency": [{ "label": "Emergencias", "number": "911" }],
+      "lines": [
+        {
+          "name": "Línea 9-8-8",
+          "number": "988",
+          "note": "24 h · inglés y francés · también por SMS"
+        }
+      ]
+    },
+    {
+      "code": "US",
+      "name": "Estados Unidos",
+      "region": "América",
+      "source": "https://988lifeline.org/es/",
+      "emergency": [{ "label": "Emergencias", "number": "911" }],
+      "lines": [
+        {
+          "name": "988 Suicide & Crisis Lifeline",
+          "number": "988",
+          "note": "24 h · español, opción 2 · también por SMS"
+        }
+      ]
+    },
+    {
+      "code": "MX",
+      "name": "México",
+      "region": "América",
+      "source": "https://www.gob.mx/salud/conasama",
+      "emergency": [{ "label": "Emergencias", "number": "911" }],
+      "lines": [
+        {
+          "name": "Línea de la Vida",
+          "number": "800 911 2000",
+          "note": "24 h · CONASAMA"
+        },
+        {
+          "name": "SAPTEL",
+          "number": "55 5259 8121",
+          "note": "24 h · Ciudad de México"
+        }
+      ]
+    },
+    {
+      "code": "CR",
+      "name": "Costa Rica",
+      "region": "América",
+      "source": "https://aquiestoy.cr/",
+      "emergency": [{ "label": "Emergencias", "number": "911" }],
+      "lines": [
+        {
+          "name": "Aquí Estoy",
+          "number": "800 273 7869",
+          "note": "L–V 14–22 h · S 9–16 h"
+        }
+      ]
+    },
+    {
+      "code": "CU",
+      "name": "Cuba",
+      "region": "América",
+      "source": "https://findahelpline.com/countries/cu",
+      "emergency": [
+        { "label": "Ambulancia", "number": "104" },
+        { "label": "Policía", "number": "106" },
+        { "label": "Bomberos", "number": "105" }
+      ],
+      "lines": [
+        {
+          "name": "Línea Confidencial 103",
+          "number": "103",
+          "note": "Apoyo psicológico · verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "SV",
+      "name": "El Salvador",
+      "region": "América",
+      "source": "https://126teorienta.gob.sv/",
+      "emergency": [
+        { "label": "Emergencias", "number": "911" },
+        { "label": "Ambulancia", "number": "132" }
+      ],
+      "lines": [
+        {
+          "name": "126 Te Orienta",
+          "number": "126",
+          "note": "24 h · salud mental"
+        }
+      ]
+    },
+    {
+      "code": "GT",
+      "name": "Guatemala",
+      "region": "América",
+      "source": "https://findahelpline.com/countries/gt",
+      "emergency": [
+        { "label": "Policía", "number": "110" },
+        { "label": "Ambulancia", "number": "122" }
+      ],
+      "lines": [
+        {
+          "name": "Alerta Joven · Línea 1503",
+          "number": "1503",
+          "note": "24 h · apoyo emocional"
+        }
+      ]
+    },
+    {
+      "code": "HN",
+      "name": "Honduras",
+      "region": "América",
+      "source": "https://findahelpline.com/countries/hn",
+      "emergency": [
+        { "label": "Emergencias", "number": "911" },
+        { "label": "Ambulancia", "number": "195" }
+      ],
+      "lines": [
+        {
+          "name": "Teléfono de la Esperanza",
+          "number": "150",
+          "note": "L–D 8–20 h · gratuito y confidencial"
+        }
+      ]
+    },
+    {
+      "code": "NI",
+      "name": "Nicaragua",
+      "region": "América",
+      "source": "https://findahelpline.com/countries/ni",
+      "emergency": [
+        { "label": "Emergencias", "number": "911" },
+        { "label": "Ambulancia", "number": "128" }
+      ],
+      "lines": [
+        {
+          "name": "Línea de ayuda psicológica",
+          "number": "2222 4830",
+          "note": "L–V 8–17 h · verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Panamá",
+      "region": "América",
+      "source": "https://www.mides.gob.pa/",
+      "emergency": [
+        { "label": "Emergencias", "number": "911" },
+        { "label": "Policía", "number": "104" }
+      ],
+      "lines": [
+        {
+          "name": "Línea 147 · Tu Vida Importa",
+          "number": "147",
+          "note": "24 h · MIDES"
+        }
+      ]
+    },
+    {
+      "code": "DO",
+      "name": "República Dominicana",
+      "region": "América",
+      "source": "https://findahelpline.com/countries/do",
+      "emergency": [{ "label": "Emergencias", "number": "911" }],
+      "lines": [
+        {
+          "name": "Línea de salud mental",
+          "number": "809 200 1400",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "PR",
+      "name": "Puerto Rico",
+      "region": "América",
+      "source": "https://988lifeline.org/es/",
+      "emergency": [{ "label": "Emergencias", "number": "911" }],
+      "lines": [
+        {
+          "name": "Línea 9-8-8",
+          "number": "988",
+          "note": "24 h · español, opción 2"
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Argentina",
+      "region": "América",
+      "source": "https://www.asistenciaalsuicida.org.ar/",
+      "emergency": [
+        { "label": "Emergencias", "number": "911" },
+        { "label": "SAME", "number": "107" }
+      ],
+      "lines": [
+        {
+          "name": "Centro de Asistencia al Suicida",
+          "number": "135",
+          "note": "24 h · CABA y Gran Buenos Aires"
+        },
+        {
+          "name": "Centro de Asistencia al Suicida",
+          "number": "0800 345 1435",
+          "note": "24 h · todo el país"
+        },
+        {
+          "name": "Centro de Asistencia al Suicida",
+          "number": "011 5275 1135",
+          "note": "24 h"
+        }
+      ]
+    },
+    {
+      "code": "BO",
+      "name": "Bolivia",
+      "region": "América",
+      "source": "https://www.unicef.org/bolivia/familia-segura",
+      "emergency": [
+        { "label": "Emergencias", "number": "911" },
+        { "label": "Ambulancia", "number": "118" },
+        { "label": "Policía", "number": "110" }
+      ],
+      "lines": [
+        {
+          "name": "Familia Segura",
+          "number": "800 11 3040",
+          "note": "Apoyo psicoemocional · UNICEF"
+        }
+      ]
+    },
+    {
+      "code": "BR",
+      "name": "Brasil",
+      "region": "América",
+      "source": "https://www.cvv.org.br/",
+      "emergency": [
+        { "label": "SAMU", "number": "192" },
+        { "label": "Policía", "number": "190" },
+        { "label": "Bomberos", "number": "193" }
+      ],
+      "lines": [
+        {
+          "name": "CVV · Centro de Valorização da Vida",
+          "number": "188",
+          "note": "24 h · gratuito"
+        }
+      ]
+    },
+    {
+      "code": "CL",
+      "name": "Chile",
+      "region": "América",
+      "source": "https://www.minsal.cl/",
+      "emergency": [
+        { "label": "SAMU", "number": "131" },
+        { "label": "Policía", "number": "133" },
+        { "label": "Bomberos", "number": "132" }
+      ],
+      "lines": [
+        {
+          "name": "Línea de Prevención del Suicidio",
+          "number": "*4141",
+          "note": "24 h · MINSAL"
+        },
+        {
+          "name": "Salud Responde",
+          "number": "600 360 7777",
+          "note": "Orientación en salud"
+        }
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Colombia",
+      "region": "América",
+      "source": "https://www.minsalud.gov.co/",
+      "emergency": [{ "label": "Emergencias", "number": "123" }],
+      "lines": [
+        {
+          "name": "Línea 106",
+          "number": "106",
+          "note": "24 h · salud mental"
+        }
+      ]
+    },
+    {
+      "code": "EC",
+      "name": "Ecuador",
+      "region": "América",
+      "source": "https://www.salud.gob.ec/",
+      "emergency": [{ "label": "Emergencias", "number": "911" }],
+      "lines": [
+        {
+          "name": "Línea 171",
+          "number": "171",
+          "note": "Opción 6 · MSP"
+        }
+      ]
+    },
+    {
+      "code": "PY",
+      "name": "Paraguay",
+      "region": "América",
+      "source": "https://www.mspbs.gov.py/",
+      "emergency": [
+        { "label": "Emergencias", "number": "911" },
+        { "label": "Ambulancia", "number": "141" },
+        { "label": "Policía", "number": "912" }
+      ],
+      "lines": [
+        {
+          "name": "Línea 155 Te Escucha",
+          "number": "155",
+          "note": "24 h · MSPBS"
+        }
+      ]
+    },
+    {
+      "code": "PE",
+      "name": "Perú",
+      "region": "América",
+      "source": "https://www.gob.pe/minsa",
+      "emergency": [
+        { "label": "Emergencias", "number": "911" },
+        { "label": "SAMU", "number": "106" },
+        { "label": "Policía", "number": "105" }
+      ],
+      "lines": [
+        {
+          "name": "Línea 113 Salud",
+          "number": "113",
+          "note": "Opción 5 · 24 h · MINSA"
+        }
+      ]
+    },
+    {
+      "code": "UY",
+      "name": "Uruguay",
+      "region": "América",
+      "source": "https://www.asse.com.uy/",
+      "emergency": [
+        { "label": "Emergencias", "number": "911" },
+        { "label": "Ambulancia", "number": "105" }
+      ],
+      "lines": [
+        {
+          "name": "Línea Vida",
+          "number": "0800 0767",
+          "note": "24 h · ASSE"
+        },
+        {
+          "name": "Línea Vida (celular)",
+          "number": "*0767",
+          "note": "24 h · ASSE"
+        }
+      ]
+    },
+    {
+      "code": "VE",
+      "name": "Venezuela",
+      "region": "América",
+      "source": "https://fpv.org.ve/",
+      "emergency": [
+        { "label": "Emergencias", "number": "911" },
+        { "label": "Emergencias", "number": "171" }
+      ],
+      "lines": [
+        {
+          "name": "LAPSI · Línea de Ayuda Psicológica",
+          "number": "0424 290 7338",
+          "note": "Federación de Psicólogos de Venezuela"
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Alemania",
+      "region": "Europa",
+      "source": "https://www.telefonseelsorge.de/",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        {
+          "name": "Telefonseelsorge",
+          "number": "0800 111 0 111",
+          "note": "24 h · gratuito"
+        },
+        {
+          "name": "Telefonseelsorge",
+          "number": "0800 111 0 222",
+          "note": "24 h · gratuito"
+        }
+      ]
+    },
+    {
+      "code": "AT",
+      "name": "Austria",
+      "region": "Europa",
+      "source": "https://www.telefonseelsorge.at/",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        { "name": "Telefonseelsorge", "number": "142", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "BE",
+      "name": "Bélgica",
+      "region": "Europa",
+      "source": "https://www.preventionsuicide.be/",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        {
+          "name": "Centre de Prévention du Suicide",
+          "number": "107",
+          "note": "24 h"
+        }
+      ]
+    },
+    {
+      "code": "BG",
+      "name": "Bulgaria",
+      "region": "Europa",
+      "source": "https://help.unhcr.org/bulgaria/",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        {
+          "name": "Línea de ayuda psicológica",
+          "number": "0800 1 1466",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "HR",
+      "name": "Croacia",
+      "region": "Europa",
+      "source": "https://findahelpline.com/countries/hr",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        {
+          "name": "Línea de ayuda",
+          "number": "0800 655 222",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "DK",
+      "name": "Dinamarca",
+      "region": "Europa",
+      "source": "https://www.livslinien.dk/",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [{ "name": "Livslinien", "number": "70 201 201", "note": "24 h" }]
+    },
+    {
+      "code": "SK",
+      "name": "Eslovaquia",
+      "region": "Europa",
+      "source": "https://findahelpline.com/countries/sk",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        {
+          "name": "Línea de ayuda emocional",
+          "number": "0800 800 566",
+          "note": "24 h"
+        }
+      ]
+    },
+    {
+      "code": "SI",
+      "name": "Eslovenia",
+      "region": "Europa",
+      "source": "https://findahelpline.com/countries/si",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        { "name": "Línea de ayuda emocional", "number": "116 123", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "ES",
+      "name": "España",
+      "region": "Europa",
+      "source": "https://www.sanidad.gob.es/",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        {
+          "name": "Línea 024",
+          "number": "024",
+          "note": "24 h · atención a la conducta suicida"
+        }
+      ]
+    },
+    {
+      "code": "EE",
+      "name": "Estonia",
+      "region": "Europa",
+      "source": "https://findahelpline.com/countries/ee",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        { "name": "Línea de ayuda emocional", "number": "116 123", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "FI",
+      "name": "Finlandia",
+      "region": "Europa",
+      "source": "https://mieli.fi/",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        { "name": "MIELI · Línea de crisis", "number": "09 2525 0111", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "FR",
+      "name": "Francia",
+      "region": "Europa",
+      "source": "https://3114.fr/",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        {
+          "name": "Numéro national de prévention du suicide",
+          "number": "3114",
+          "note": "24 h"
+        }
+      ]
+    },
+    {
+      "code": "GR",
+      "name": "Grecia",
+      "region": "Europa",
+      "source": "https://findahelpline.com/countries/gr",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [{ "name": "Klimaka · Línea 1018", "number": "1018", "note": "24 h" }]
+    },
+    {
+      "code": "HU",
+      "name": "Hungría",
+      "region": "Europa",
+      "source": "https://findahelpline.com/countries/hu",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        { "name": "Línea de ayuda emocional", "number": "116 123", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "IE",
+      "name": "Irlanda",
+      "region": "Europa",
+      "source": "https://www.samaritans.org/",
+      "emergency": [
+        { "label": "Emergencias", "number": "112" },
+        { "label": "Emergencias", "number": "999" }
+      ],
+      "lines": [{ "name": "Samaritans", "number": "116 123", "note": "24 h" }]
+    },
+    {
+      "code": "IS",
+      "name": "Islandia",
+      "region": "Europa",
+      "source": "https://www.raudikrossinn.is/",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [{ "name": "Cruz Roja · 1717", "number": "1717", "note": "24 h" }]
+    },
+    {
+      "code": "IT",
+      "name": "Italia",
+      "region": "Europa",
+      "source": "https://www.telefonoamico.it/",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        {
+          "name": "Telefono Amico",
+          "number": "02 99777",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "LV",
+      "name": "Letonia",
+      "region": "Europa",
+      "source": "https://findahelpline.com/countries/lv",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        { "name": "Línea de ayuda emocional", "number": "116 123", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "LT",
+      "name": "Lituania",
+      "region": "Europa",
+      "source": "https://findahelpline.com/countries/lt",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        { "name": "Línea de ayuda emocional", "number": "116 123", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "LU",
+      "name": "Luxemburgo",
+      "region": "Europa",
+      "source": "https://findahelpline.com/countries/lu",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [{ "name": "SOS Détresse", "number": "45 45 45", "note": "24 h" }]
+    },
+    {
+      "code": "NO",
+      "name": "Noruega",
+      "region": "Europa",
+      "source": "https://mentalhelse.no/",
+      "emergency": [{ "label": "Emergencias médicas", "number": "113" }],
+      "lines": [{ "name": "Mental Helse", "number": "116 123", "note": "24 h" }]
+    },
+    {
+      "code": "NL",
+      "name": "Países Bajos",
+      "region": "Europa",
+      "source": "https://www.113.nl/",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [{ "name": "113 Zelfmoordpreventie", "number": "113", "note": "24 h" }]
+    },
+    {
+      "code": "PL",
+      "name": "Polonia",
+      "region": "Europa",
+      "source": "https://findahelpline.com/countries/pl",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        { "name": "Línea de ayuda emocional", "number": "116 123", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "PT",
+      "name": "Portugal",
+      "region": "Europa",
+      "source": "https://www.sns24.gov.pt/",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        { "name": "SNS 24", "number": "808 24 24 24", "note": "24 h · salud" },
+        { "name": "SOS Voz Amiga", "number": "213 544 545", "note": "16–24 h" }
+      ]
+    },
+    {
+      "code": "GB",
+      "name": "Reino Unido",
+      "region": "Europa",
+      "source": "https://www.samaritans.org/",
+      "emergency": [
+        { "label": "Emergencias", "number": "999" },
+        { "label": "Emergencias", "number": "112" }
+      ],
+      "lines": [
+        { "name": "Samaritans", "number": "116 123", "note": "24 h" },
+        {
+          "name": "Shout",
+          "number": "85258",
+          "note": "SMS · 24 h",
+          "mode": "sms"
+        }
+      ]
+    },
+    {
+      "code": "CZ",
+      "name": "República Checa",
+      "region": "Europa",
+      "source": "https://findahelpline.com/countries/cz",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        { "name": "Línea de ayuda emocional", "number": "116 123", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "RO",
+      "name": "Rumanía",
+      "region": "Europa",
+      "source": "https://findahelpline.com/countries/ro",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        {
+          "name": "Línea de ayuda",
+          "number": "0374 456 420",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "RU",
+      "name": "Rusia",
+      "region": "Europa",
+      "source": "https://findahelpline.com/countries/ru",
+      "emergency": [
+        { "label": "Ambulancia", "number": "103" },
+        { "label": "Emergencias", "number": "112" }
+      ],
+      "lines": [
+        {
+          "name": "Ayuda psicológica",
+          "number": "8 495 989 50 50",
+          "note": "24 h · Moscú"
+        }
+      ]
+    },
+    {
+      "code": "RS",
+      "name": "Serbia",
+      "region": "Europa",
+      "source": "https://findahelpline.com/countries/rs",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        { "name": "Línea de ayuda", "number": "0800 309 309", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "SE",
+      "name": "Suecia",
+      "region": "Europa",
+      "source": "https://mind.se/",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        { "name": "Mind · Línea de crisis", "number": "90101", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "CH",
+      "name": "Suiza",
+      "region": "Europa",
+      "source": "https://www.143.ch/",
+      "emergency": [
+        { "label": "Ambulancia", "number": "144" },
+        { "label": "Emergencias", "number": "112" }
+      ],
+      "lines": [
+        { "name": "Die Dargebotene Hand", "number": "143", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "TR",
+      "name": "Turquía",
+      "region": "Europa",
+      "source": "https://findahelpline.com/countries/tr",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        { "name": "Línea de apoyo social", "number": "183", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "UA",
+      "name": "Ucrania",
+      "region": "Europa",
+      "source": "https://lifelineukraine.com/",
+      "emergency": [
+        { "label": "Ambulancia", "number": "103" },
+        { "label": "Emergencias", "number": "112" }
+      ],
+      "lines": [
+        { "name": "Lifeline Ukraine", "number": "0800 100 102", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "SA",
+      "name": "Arabia Saudita",
+      "region": "Asia",
+      "source": "https://www.moh.gov.sa/",
+      "emergency": [
+        { "label": "Ambulancia", "number": "997" },
+        { "label": "Emergencias", "number": "911" }
+      ],
+      "lines": [
+        {
+          "name": "Centro Nacional de Salud Mental",
+          "number": "9200 33360",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "BD",
+      "name": "Bangladés",
+      "region": "Asia",
+      "source": "https://kaanpeteroi.org/",
+      "emergency": [{ "label": "Emergencias", "number": "999" }],
+      "lines": [
+        {
+          "name": "Kaan Pete Roi",
+          "number": "09638 881 888",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "QA",
+      "name": "Catar",
+      "region": "Asia",
+      "source": "https://www.hamad.qa/",
+      "emergency": [{ "label": "Emergencias", "number": "999" }],
+      "lines": [
+        {
+          "name": "Línea de salud mental",
+          "number": "16000",
+          "note": "Opción 4"
+        }
+      ]
+    },
+    {
+      "code": "CN",
+      "name": "China",
+      "region": "Asia",
+      "source": "https://en.nhc.gov.cn/",
+      "emergency": [
+        { "label": "Ambulancia", "number": "120" },
+        { "label": "Emergencias", "number": "110" }
+      ],
+      "lines": [
+        {
+          "name": "Línea nacional de ayuda psicológica",
+          "number": "12356",
+          "note": "24 h"
+        }
+      ]
+    },
+    {
+      "code": "KR",
+      "name": "Corea del Sur",
+      "region": "Asia",
+      "source": "https://www.mohw.go.kr/",
+      "emergency": [
+        { "label": "Emergencias", "number": "119" },
+        { "label": "Policía", "number": "112" }
+      ],
+      "lines": [
+        {
+          "name": "Línea de prevención del suicidio",
+          "number": "109",
+          "note": "24 h"
+        }
+      ]
+    },
+    {
+      "code": "AE",
+      "name": "Emiratos Árabes Unidos",
+      "region": "Asia",
+      "source": "https://www.mohap.gov.ae/",
+      "emergency": [
+        { "label": "Ambulancia", "number": "998" },
+        { "label": "Policía", "number": "999" }
+      ],
+      "lines": [
+        {
+          "name": "Línea de apoyo",
+          "number": "800 4673",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "PH",
+      "name": "Filipinas",
+      "region": "Asia",
+      "source": "https://ncmh.gov.ph/",
+      "emergency": [{ "label": "Emergencias", "number": "911" }],
+      "lines": [
+        { "name": "NCMH Crisis Hotline", "number": "1553", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "HK",
+      "name": "Hong Kong",
+      "region": "Asia",
+      "source": "https://www.samaritans.org.hk/",
+      "emergency": [{ "label": "Emergencias", "number": "999" }],
+      "lines": [
+        { "name": "The Samaritans", "number": "2389 2222", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "IN",
+      "name": "India",
+      "region": "Asia",
+      "source": "https://telemanas.mohfw.gov.in/",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        {
+          "name": "Tele-MANAS",
+          "number": "14416",
+          "note": "24 h · varios idiomas"
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Indonesia",
+      "region": "Asia",
+      "source": "https://www.kemkes.go.id/",
+      "emergency": [{ "label": "Emergencias", "number": "119" }],
+      "lines": [
+        {
+          "name": "Línea de salud mental",
+          "number": "119",
+          "note": "Opción 8"
+        }
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Israel",
+      "region": "Asia",
+      "source": "https://www.eran.org.il/",
+      "emergency": [
+        { "label": "Emergencias médicas", "number": "101" },
+        { "label": "Policía", "number": "100" }
+      ],
+      "lines": [{ "name": "ERAN", "number": "1201", "note": "24 h" }]
+    },
+    {
+      "code": "JP",
+      "name": "Japón",
+      "region": "Asia",
+      "source": "https://www.inochinodenwa.org/",
+      "emergency": [
+        { "label": "Ambulancia", "number": "119" },
+        { "label": "Policía", "number": "110" }
+      ],
+      "lines": [
+        {
+          "name": "Inochi no Denwa",
+          "number": "0120 061 338",
+          "note": "24 h"
+        }
+      ]
+    },
+    {
+      "code": "LB",
+      "name": "Líbano",
+      "region": "Asia",
+      "source": "https://embracelebanon.org/",
+      "emergency": [
+        { "label": "Ambulancia", "number": "140" },
+        { "label": "Policía", "number": "112" }
+      ],
+      "lines": [{ "name": "Embrace", "number": "1564", "note": "24 h" }]
+    },
+    {
+      "code": "MY",
+      "name": "Malasia",
+      "region": "Asia",
+      "source": "https://findahelpline.com/countries/my",
+      "emergency": [{ "label": "Emergencias", "number": "999" }],
+      "lines": [
+        { "name": "Talian HEAL", "number": "15555", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "NP",
+      "name": "Nepal",
+      "region": "Asia",
+      "source": "https://www.tpo.org.np/",
+      "emergency": [
+        { "label": "Ambulancia", "number": "102" },
+        { "label": "Policía", "number": "100" }
+      ],
+      "lines": [
+        {
+          "name": "Línea de ayuda",
+          "number": "1166",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "PK",
+      "name": "Pakistán",
+      "region": "Asia",
+      "source": "https://umang.com.pk/",
+      "emergency": [{ "label": "Emergencias", "number": "1122" }],
+      "lines": [
+        {
+          "name": "Umang",
+          "number": "0304 111 1741",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "SG",
+      "name": "Singapur",
+      "region": "Asia",
+      "source": "https://www.sos.org.sg/",
+      "emergency": [{ "label": "Emergencias", "number": "995" }],
+      "lines": [{ "name": "SOS Singapore", "number": "1767", "note": "24 h" }]
+    },
+    {
+      "code": "LK",
+      "name": "Sri Lanka",
+      "region": "Asia",
+      "source": "https://sumithrayo.lk/",
+      "emergency": [
+        { "label": "Ambulancia", "number": "1990" },
+        { "label": "Policía", "number": "119" }
+      ],
+      "lines": [
+        {
+          "name": "Sumithrayo",
+          "number": "1926",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "TH",
+      "name": "Tailandia",
+      "region": "Asia",
+      "source": "https://www.dmh.go.th/",
+      "emergency": [
+        { "label": "Ambulancia", "number": "1669" },
+        { "label": "Emergencias", "number": "191" }
+      ],
+      "lines": [
+        { "name": "Línea de salud mental", "number": "1323", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "TW",
+      "name": "Taiwán",
+      "region": "Asia",
+      "source": "https://findahelpline.com/countries/tw",
+      "emergency": [
+        { "label": "Emergencias", "number": "119" },
+        { "label": "Policía", "number": "110" }
+      ],
+      "lines": [{ "name": "Línea 1925", "number": "1925", "note": "24 h" }]
+    },
+    {
+      "code": "VN",
+      "name": "Vietnam",
+      "region": "Asia",
+      "source": "https://findahelpline.com/countries/vn",
+      "emergency": [
+        { "label": "Ambulancia", "number": "115" },
+        { "label": "Policía", "number": "113" }
+      ],
+      "lines": [
+        {
+          "name": "Línea de ayuda psicológica",
+          "number": "1900 6233",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "EG",
+      "name": "Egipto",
+      "region": "África",
+      "source": "https://www.mohp.gov.eg/",
+      "emergency": [
+        { "label": "Ambulancia", "number": "123" },
+        { "label": "Policía", "number": "122" }
+      ],
+      "lines": [
+        {
+          "name": "Línea de salud mental",
+          "number": "16328",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "ET",
+      "name": "Etiopía",
+      "region": "África",
+      "source": "https://www.moh.gov.et/",
+      "emergency": [{ "label": "Emergencias", "number": "911" }],
+      "lines": [
+        {
+          "name": "Línea de ayuda",
+          "number": "8335",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "KE",
+      "name": "Kenia",
+      "region": "África",
+      "source": "https://befrienderskenya.org/",
+      "emergency": [
+        { "label": "Emergencias", "number": "999" },
+        { "label": "Emergencias", "number": "112" }
+      ],
+      "lines": [
+        {
+          "name": "Befrienders Kenya",
+          "number": "0722 178 177",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Marruecos",
+      "region": "África",
+      "source": "https://www.sante.gov.ma/",
+      "emergency": [
+        { "label": "Ambulancia", "number": "15" },
+        { "label": "Policía", "number": "19" }
+      ],
+      "lines": [
+        {
+          "name": "Línea de ayuda",
+          "number": "0522 25 25 25",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "region": "África",
+      "source": "https://surpin.org/",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        {
+          "name": "SURPIN",
+          "number": "0800 078 7746",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "ZA",
+      "name": "Sudáfrica",
+      "region": "África",
+      "source": "https://www.sadag.org/",
+      "emergency": [
+        { "label": "Ambulancia", "number": "10177" },
+        { "label": "Emergencias", "number": "112" }
+      ],
+      "lines": [
+        { "name": "SADAG", "number": "0800 567 567", "note": "24 h" }
+      ]
+    },
+    {
+      "code": "TZ",
+      "name": "Tanzania",
+      "region": "África",
+      "source": "https://www.moh.go.tz/",
+      "emergency": [
+        { "label": "Emergencias", "number": "112" },
+        { "label": "Ambulancia", "number": "114" }
+      ],
+      "lines": [
+        {
+          "name": "Línea de salud",
+          "number": "199",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Túnez",
+      "region": "África",
+      "source": "https://www.sante.gov.tn/",
+      "emergency": [
+        { "label": "Ambulancia", "number": "190" },
+        { "label": "Policía", "number": "197" }
+      ],
+      "lines": [
+        {
+          "name": "SOS Écoute",
+          "number": "8010 3666",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "UG",
+      "name": "Uganda",
+      "region": "África",
+      "source": "https://mhu.ug/",
+      "emergency": [{ "label": "Emergencias", "number": "112" }],
+      "lines": [
+        {
+          "name": "Mental Health Uganda",
+          "number": "0800 21 21 21",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "AU",
+      "name": "Australia",
+      "region": "Oceanía",
+      "source": "https://www.lifeline.org.au/",
+      "emergency": [{ "label": "Emergencias", "number": "000" }],
+      "lines": [{ "name": "Lifeline", "number": "13 11 14", "note": "24 h" }]
+    },
+    {
+      "code": "FJ",
+      "name": "Fiyi",
+      "region": "Oceanía",
+      "source": "https://findahelpline.com/countries/fj",
+      "emergency": [{ "label": "Emergencias", "number": "911" }],
+      "lines": [
+        {
+          "name": "Lifeline Fiji",
+          "number": "1543",
+          "note": "Verifica el horario al llamar"
+        }
+      ]
+    },
+    {
+      "code": "NZ",
+      "name": "Nueva Zelanda",
+      "region": "Oceanía",
+      "source": "https://1737.org.nz/",
+      "emergency": [{ "label": "Emergencias", "number": "111" }],
+      "lines": [
+        {
+          "name": "Need to Talk? · 1737",
+          "number": "1737",
+          "note": "24 h · llamada o SMS"
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,9 @@
 node_modules/
+dist/
+.astro/
+.vercel/
+.output/
+*.tsbuildinfo
 vendor/
 
 # Secretos: nunca al repositorio

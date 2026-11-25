@@ -1,0 +1,104 @@
+---
+/**
+ * Lista de países y líneas de ayuda.
+ *
+ * Se usa en el diálogo de la página principal y en `/ayuda`. Todo el contenido
+ * se genera en el build: no hay fetch de datos en el navegador.
+ *
+ * `regionLevel` permite que la jerarquía de encabezados sea correcta en cada
+ * contexto (h3/h4 dentro del diálogo, h2/h3 en la página completa).
+ */
+import Icon from './Icon.astro';
+import { crisisData, countrySearchText, telHref } from '../lib/crisis.js';
+
+const { groups, regionLevel = 3 } = Astro.props;
+
+const RegionTag = `h${regionLevel}`;
+const CountryTag = `h${regionLevel + 1}`;
+---
+
+{
+  groups.map((group) => (
+    <section class="region" data-region={group.region} aria-labelledby={`region-${group.region}`}>
+      <RegionTag class="region-title" id={`region-${group.region}`}>
+        {group.region}
+      </RegionTag>
+
+      <ul class="country-list">
+        {group.countries.map((country) => (
+          <li>
+            <article
+              class="country"
+              id={`pais-${country.code.toLowerCase()}`}
+              data-country={country.code}
+              data-search={countrySearchText(country)}
+              tabindex="-1"
+            >
+              <div class="country-head">
+                <CountryTag class="country-name">{country.name}</CountryTag>
+
+                {country.source && (
+                  <a
+                    class="country-source"
+                    href={country.source}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Fuente de ${country.name} (se abre en otra pestaña)`}
+                  >
+                    <Icon name="external" size={15} />
+                  </a>
+                )}
+              </div>
+
+              {country.emergency.length > 0 && (
+                <ul class="emergency-list" aria-label={`Números de emergencia de ${country.name}`}>
+                  {country.emergency.map((item) => (
+                    <li>
+                      <span class="emergency-label">{item.label}</span>
+                      <a
+                        class="emergency-number"
+                        href={telHref(item)}
+                        aria-label={`Llamar a ${item.label} de ${country.name}: ${item.number}`}
+                      >
+                        {item.number}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              {country.lines.length > 0 ? (
+                <ul class="line-list">
+                  {country.lines.map((line) => (
+                    <li class="line">
+                      <div class="line-info">
+                        <span class="line-name">{line.name}</span>
+                        {line.note && <span class="line-note">{line.note}</span>}
+                      </div>
+
+                      <a
+                        class="line-number"
+                        href={telHref(line)}
+                        aria-label={`${line.mode === 'sms' ? 'Enviar SMS a' : 'Llamar a'} ${line.name}: ${line.number}`}
+                      >
+                        <Icon name={line.mode === 'sms' ? 'message' : 'phone'} size={15} />
+                        {line.number}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p class="line-empty">
+                  No tenemos una línea verificada para este país. Consulta{' '}
+                  <a href={crisisData.global.url} target="_blank" rel="noopener noreferrer">
+                    Find A Helpline
+                  </a>.
+                </p>
+              )}
+            </article>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))
+}

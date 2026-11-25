@@ -1,0 +1,109 @@
+---
+/**
+ * Interfaz de la conversación.
+ *
+ * El estado vacío se renderiza en el servidor y el script lo clona al borrar,
+ * así que no hay plantillas ocultas ni HTML construido a mano en el cliente.
+ * La conversación vive solo en la memoria de la pestaña.
+ */
+import Icon from './Icon.astro';
+import { CHAT, SUGGESTIONS } from '../config.js';
+
+const idleMinutes = Math.round(CHAT.inactivityMs / 60_000);
+---
+
+<section class="chat-shell wrap" aria-label="Conversación con Prometeo">
+  <div class="chat-card">
+    <header class="chat-head">
+      <div class="chat-heading">
+        <p class="chat-kicker">Conversación efímera</p>
+        <p class="chat-status">
+          <span class="status-dot" aria-hidden="true"></span>
+          Solo en esta pestaña
+        </p>
+      </div>
+
+      <button id="reset-btn" class="btn btn-ghost" type="button">
+        <Icon name="reset" size={17} />
+        <span>Empezar de nuevo</span>
+      </button>
+    </header>
+
+    <div
+      id="chat-log"
+      class="chat-log"
+      role="log"
+      aria-live="polite"
+      aria-relevant="additions text"
+      aria-label="Mensajes de la conversación"
+    >
+      <div class="empty" data-empty-state>
+        <p class="kicker">
+          <span class="kicker-dot" aria-hidden="true"></span>
+          Modo incógnito
+        </p>
+        <h2 class="empty-title">Deja aquí lo que <em>no pudiste decir</em>.</h2>
+        <p class="empty-text">
+          No hay cuentas, no hay historial. Escribe, suéltalo, y cuando cierres la pestaña,
+          se va contigo.
+        </p>
+
+        <div class="chips" role="group" aria-label="Ideas para empezar">
+          {
+            SUGGESTIONS.map((suggestion) => (
+              <button class="chip" type="button" data-suggestion>
+                {suggestion}
+              </button>
+            ))
+          }
+        </div>
+
+        <p class="empty-note" hidden></p>
+      </div>
+
+      <noscript>
+        <p class="noscript-note">
+          Para conversar necesitas activar JavaScript. Las líneas de ayuda están disponibles
+          igualmente en <a href="/ayuda">la página de ayuda</a>.
+        </p>
+      </noscript>
+    </div>
+
+    <!--
+      `method="post"` es una red de seguridad: si JavaScript está desactivado,
+      el navegador no pone el mensaje en la URL (ni en el historial ni en los
+      logs del servidor). El script siempre cancela el envío y usa fetch.
+    -->
+    <form id="chat-form" class="composer" method="post" autocomplete="off" novalidate>
+      <label class="sr-only" for="user-input">Escribe lo que necesites soltar</label>
+
+      <div class="composer-box">
+        <textarea
+          id="user-input"
+          class="composer-input"
+          name="message"
+          rows="1"
+          maxlength={CHAT.maxChars}
+          placeholder="Escribe lo que necesitas soltar…"
+          aria-describedby="chat-privacy"
+          required
+          autocomplete="off"
+          autocapitalize="sentences"
+          spellcheck="true"
+        ></textarea>
+
+        <div class="composer-bar">
+          <span id="char-count" class="char-count" aria-live="polite">0 / {CHAT.maxChars}</span>
+          <button id="send-btn" class="btn btn-send" type="submit" disabled>
+            <span>Enviar</span>
+            <Icon name="send" size={17} />
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <p id="chat-privacy" class="chat-foot">
+      Se borra sola a los {idleMinutes} minutos sin actividad. Nada se guarda en el servidor.
+    </p>
+  </div>
+</section>

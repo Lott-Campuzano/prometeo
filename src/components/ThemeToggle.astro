@@ -1,0 +1,22 @@
+---
+/**
+ * Interruptor de tema.
+ *
+ * Tres estados en memoria: automático (sigue al sistema), claro y oscuro.
+ * No se usa localStorage ni cookies: al recargar, vuelve a automático. Es una
+ * decisión deliberada para no dejar rastro, igual que con la conversación.
+ */
+import Icon from './Icon.astro';
+---
+
+<button
+  id="theme-toggle"
+  class="icon-btn theme-toggle"
+  type="button"
+  aria-label="Cambiar tema"
+  title="Tema automático"
+>
+  <span class="theme-icon" data-theme-icon="auto"><Icon name="auto" size={19} /></span>
+  <span class="theme-icon" data-theme-icon="light"><Icon name="sun" size={19} /></span>
+  <span class="theme-icon" data-theme-icon="dark"><Icon name="moon" size={19} /></span>
+</button>

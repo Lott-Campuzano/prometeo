@@ -1,0 +1,103 @@
+---
+/**
+ * Página completa de líneas de ayuda.
+ *
+ * Existe para que los recursos sean accesibles sin JavaScript, para poder
+ * enlazarlos desde el diálogo y para dejar las fuentes a la vista. Se genera
+ * en el build a partir de `src/data/crisis-lines.json`.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CrisisList from '../components/CrisisList.astro';
+import Icon from '../components/Icon.astro';
+import { crisisData, groupByRegion } from '../lib/crisis.js';
+
+const groups = groupByRegion(crisisData.countries);
+---
+
+<BaseLayout
+  title="Líneas de ayuda"
+  description="Números de emergencia y líneas de apoyo psicológico revisadas por país. Si estás en peligro, llama primero a emergencias."
+  current="ayuda"
+  mainClass="help-main"
+>
+  <section class="page-hero wrap" aria-labelledby="help-title">
+    <div>
+      <p class="eyebrow">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        Recursos revisados
+      </p>
+      <h1 id="help-title" class="page-title">Líneas de ayuda</h1>
+      <p class="lede">
+        Si estás en peligro inmediato, llama al número de emergencias de tu país. Si necesitas
+        hablar con alguien, estas líneas atienden gratis y sin juzgar.
+      </p>
+
+      <div class="page-actions">
+        <a class="btn btn-primary" href="/">
+          <Icon name="message" size={17} />
+          Volver a la conversación
+        </a>
+        <a
+          class="btn btn-soft"
+          href={crisisData.global.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Find A Helpline
+          <Icon name="external" size={15} />
+        </a>
+      </div>
+    </div>
+
+    <aside class="emergency-callout">
+      <p class="emergency-callout-title">
+        <Icon name="phone" size={17} />
+        Emergencia inmediata
+      </p>
+      <p>
+        Llama al <strong>número de emergencias</strong> de tu país (911 en gran parte de
+        América, 112 en Europa). No tienes que explicar nada ni dar tus datos.
+      </p>
+    </aside>
+  </section>
+
+  <section class="wrap help-content" aria-label="Lista de países">
+    <p class="help-note">
+      Los números se revisaron el <strong>{crisisData.reviewedLabel}</strong>. Pueden cambiar:
+      si una línea no responde, llama a emergencias o consulta{' '}
+      <a href={crisisData.global.url} target="_blank" rel="noopener noreferrer">
+        Find A Helpline
+      </a>.
+    </p>
+
+    <div class="crisis-list crisis-list-page">
+      <CrisisList groups={groups} regionLevel={2} />
+    </div>
+
+    <footer class="sources" aria-labelledby="sources-title">
+      <h2 id="sources-title" class="sources-title">Fuentes</h2>
+      <p>
+        Los datos se recopilaron de las siguientes fuentes y de los enlaces oficiales indicados
+        en cada país. Si detectas un error, abre un issue en el repositorio.
+      </p>
+
+      <ul class="source-list">
+        {
+          crisisData.sources.map((source) => (
+            <li>
+              <a href={source.url} target="_blank" rel="noopener noreferrer">
+                {source.name}
+                <Icon name="external" size={14} />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <p class="sources-note">
+        Prometeo no es un servicio de emergencia ni sustituye la atención profesional. Esta
+        página no guarda datos de quien la visita.
+      </p>
+    </footer>
+  </section>
+</BaseLayout>

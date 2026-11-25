@@ -1,34 +1,37 @@
 {
   "name": "prometeo",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
-  "description": "Espacio anónimo y efímero para desahogarse. Sin cuentas, sin historial.",
-  "main": "server.js",
-  "type": "commonjs",
+  "type": "module",
+  "description": "Espacio anónimo y efímero para desahogarse. Sin cuentas, sin historial, sin rastro.",
   "engines": {
-    "node": ">=18"
+    "node": ">=22.12.0"
   },
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "check": "astro build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Lott-Campuzano/prometeo.git"
   },
   "keywords": [
+    "astro",
+    "vercel",
     "chat",
     "anonimo",
     "efimero",
-    "desahogo"
+    "salud-mental"
   ],
-  "license": "ISC",
+  "license": "CC0-1.0",
   "bugs": {
     "url": "https://github.com/Lott-Campuzano/prometeo/issues"
   },
   "homepage": "https://github.com/Lott-Campuzano/prometeo#readme",
   "dependencies": {
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1"
+    "@astrojs/vercel": "10.0.8",
+    "astro": "6.4.8"
   }
 }

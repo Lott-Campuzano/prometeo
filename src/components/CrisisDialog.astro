@@ -1,0 +1,89 @@
+---
+/**
+ * Diálogo nativo con las líneas de ayuda.
+ *
+ * Se renderiza completo en el build. El script solo lo abre, filtra países y
+ * detecta el idioma del navegador. El enlace del navbar funciona sin JS porque
+ * apunta a `/ayuda`; el diálogo es una mejora progresiva.
+ */
+import Icon from './Icon.astro';
+import CrisisList from './CrisisList.astro';
+import { crisisData, groupByRegion } from '../lib/crisis.js';
+
+const groups = groupByRegion(crisisData.countries);
+---
+
+<dialog id="crisis-dialog" class="crisis-dialog" aria-labelledby="crisis-title">
+  <div class="dialog-card">
+    <header class="dialog-head">
+      <div>
+        <p class="eyebrow">Ayuda real, ahora</p>
+        <h2 id="crisis-title" class="dialog-title">Líneas de ayuda</h2>
+      </div>
+
+      <form method="dialog" class="dialog-close-form">
+        <button class="icon-btn" type="submit" aria-label="Cerrar líneas de ayuda">
+          <Icon name="close" size={20} />
+        </button>
+      </form>
+    </header>
+
+    <p class="dialog-lede">
+      Si estás en peligro inmediato, llama al número de emergencias de tu país. No tienes
+      que explicar nada ni dar tus datos.
+    </p>
+
+    <div id="detected-banner" class="detected" hidden>
+      <p>Parece que estás en <strong id="detected-name"></strong>.</p>
+      <a id="detected-link" class="text-link" href="#crisis-list">
+        Ver sus líneas
+        <Icon name="arrowDown" size={15} />
+      </a>
+    </div>
+
+    <label class="search-field" for="crisis-search">
+      <Icon name="search" size={18} />
+      <span class="sr-only">Buscar país</span>
+      <input
+        id="crisis-search"
+        type="search"
+        placeholder="Busca tu país…"
+        autocomplete="off"
+        spellcheck="false"
+        aria-controls="crisis-list"
+        aria-describedby="search-hint"
+      />
+    </label>
+    <p id="search-hint" class="sr-only">
+      Escribe el nombre del país para filtrar la lista. Los resultados se actualizan al escribir.
+    </p>
+
+    <p id="search-empty" class="search-empty" hidden>
+      No encuentro ese país. Prueba con el nombre en español o consulta{' '}
+      <a href={crisisData.global.url} target="_blank" rel="noopener noreferrer">
+        Find A Helpline
+      </a>.
+    </p>
+
+    <div id="crisis-list" class="crisis-list">
+      <CrisisList groups={groups} regionLevel={3} />
+    </div>
+
+    <footer class="dialog-foot">
+      <p>{crisisData.note}</p>
+      <p class="dialog-meta">
+        Revisadas el {crisisData.reviewedLabel}.{' '}
+        <a href="/ayuda">Ver la página completa y las fuentes</a>.
+      </p>
+      <a
+        class="btn btn-soft"
+        href={crisisData.global.url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        No está mi país · Find A Helpline
+        <Icon name="external" size={15} />
+      </a>
+    </footer>
+  </div>
+</dialog>
