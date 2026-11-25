@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/Lott-Campuzano/prometeo#readme",
   "dependencies": {
-    "@astrojs/vercel": "10.0.8",
-    "astro": "6.4.8"
+    "@astrojs/vercel": "11.0.3",
+    "astro": "7.4.13"
   }
 }
