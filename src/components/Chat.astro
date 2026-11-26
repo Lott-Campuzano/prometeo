@@ -16,11 +16,7 @@ const idleMinutes = Math.round(CHAT.inactivityMs / 60_000);
   <div class="chat-card">
     <header class="chat-head">
       <div class="chat-heading">
-        <p class="chat-kicker">Conversación efímera</p>
-        <p class="chat-status">
-          <span class="status-dot" aria-hidden="true"></span>
-          Nada de lo que hables con Prometeo se almacena y todo se borra tras 20 minutos sin actividad
-        </p>
+        <p class="chat-kicker">Prometeo olvida todo cuando cierras o tras {idleMinutes} sin actividad</p>
       </div>
 
       <button id="reset-btn" class="btn btn-ghost" type="button">
@@ -96,9 +92,5 @@ const idleMinutes = Math.round(CHAT.inactivityMs / 60_000);
         </div>
       </div>
     </form>
-
-    <p id="chat-privacy" class="chat-foot">
-      Se borra sola a los {idleMinutes} minutos sin actividad. Nada se guarda en el servidor.
-    </p>
   </div>
 </section>
