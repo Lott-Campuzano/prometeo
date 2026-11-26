@@ -32,7 +32,7 @@ const idleMinutes = Math.round(CHAT.inactivityMs / 60_000);
       <div class="empty" data-empty-state>
         <h2 class="empty-title"><em>Prometeo</em>.</h2>
         <p class="empty-text">
-          ¿Necesitas ayuda?
+          Estoy aquí para escucharte y no te preocupes, olvidare todo en {idleMinutes} o cuando cierres.
         </p>
 
         <div class="chips" role="group" aria-label="Ideas para empezar">
@@ -82,7 +82,6 @@ const idleMinutes = Math.round(CHAT.inactivityMs / 60_000);
         <div class="composer-bar">
           <span id="char-count" class="char-count" aria-live="polite">0 / {CHAT.maxChars}</span>
           <button id="send-btn" class="btn btn-send" type="submit" disabled>
-            <span>Enviar</span>
             <Icon name="send" size={17} />
           </button>
         </div>
