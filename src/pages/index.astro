@@ -16,36 +16,12 @@ import { SITE } from '../config.js';
 <BaseLayout title={undefined} description={SITE.description} current="inicio">
   <section class="hero wrap" aria-labelledby="hero-title">
     <div class="hero-copy">
-      <p class="eyebrow">
-        <span class="eyebrow-dot" aria-hidden="true"></span>
-        Modo incógnito
-      </p>
+
 
       <h1 id="hero-title" class="hero-title">
-        Un lugar para soltar <em>lo que pesa</em>.
+        <em>Prometeo</em>.
       </h1>
-
-      <p class="lede">
-        Sin cuentas, sin historial, sin rastro. Escribe. Respira. Cuando cierres la pestaña,
-        la conversación se va contigo.
-      </p>
-
-      <ul class="privacy-chips" aria-label="Privacidad">
-        <li><Icon name="shield" size={15} /> Sin cuentas</li>
-        <li>Sin cookies</li>
-        <li>Sin historial</li>
-      </ul>
     </div>
-
-    <aside class="hero-note" aria-labelledby="how-title">
-      <p class="hero-note-kicker" id="how-title">Cómo funciona</p>
-      <ol class="how-list">
-        <li>Escribe lo que sientes, sin registrarte.</li>
-        <li>Prometeo escucha y responde con calma.</li>
-        <li>Al cerrar la pestaña, no queda nada.</li>
-      </ol>
-      <p class="hero-note-foot">Nada se guarda en el servidor.</p>
-    </aside>
   </section>
 
   <Chat />
