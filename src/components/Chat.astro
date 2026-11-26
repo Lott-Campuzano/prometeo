@@ -16,7 +16,7 @@ const idleMinutes = Math.round(CHAT.inactivityMs / 60_000);
   <div class="chat-card">
     <header class="chat-head">
       <div class="chat-heading">
-        <p class="chat-kicker">Prometeo olvida todo cuando cierras o tras {idleMinutes} sin actividad</p>
+        <p class="chat-kicker">Prometeo olvida todo cuando cierras o tras {idleMinutes} minutos sin actividad</p>
       </div>
 
       <button id="reset-btn" class="btn btn-ghost" type="button">
@@ -34,9 +34,9 @@ const idleMinutes = Math.round(CHAT.inactivityMs / 60_000);
       aria-label="Mensajes de la conversación"
     >
       <div class="empty" data-empty-state>
-        <h2 class="empty-title"><em>Prometeo</em>.</h2>
+        <h2 class="empty-title"><em>Prometeo</em>v1.0</h2>
         <p class="empty-text">
-          Un chatbot sin memoria, listo para ayudarte con lo que te cuesta soltar
+          ¿Necesitas ayuda?
         </p>
 
         <div class="chips" role="group" aria-label="Ideas para empezar">
@@ -66,7 +66,7 @@ const idleMinutes = Math.round(CHAT.inactivityMs / 60_000);
       logs del servidor). El script siempre cancela el envío y usa fetch.
     -->
     <form id="chat-form" class="composer" method="post" autocomplete="off" novalidate>
-      <label class="sr-only" for="user-input">Escribe lo que necesites soltar</label>
+      <label class="sr-only" for="user-input">Cuentame lo que necesitas soltar</label>
 
       <div class="composer-box">
         <textarea
@@ -75,7 +75,7 @@ const idleMinutes = Math.round(CHAT.inactivityMs / 60_000);
           name="message"
           rows="1"
           maxlength={CHAT.maxChars}
-          placeholder="Escribe lo que necesitas soltar…"
+          placeholder="Cuentame lo que necesitas soltar…"
           aria-describedby="chat-privacy"
           required
           autocomplete="off"
