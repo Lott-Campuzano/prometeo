@@ -111,7 +111,7 @@ export function readConfig() {
 
   return {
     apiKey: process.env.OPENAI_API_KEY ?? '',
-    model: process.env.OPENAI_MODEL || 'omni-moderation-latest',
+    model: process.env.OPENAI_MODEL || 'gpt-6-luna',
     baseUrl: (process.env.OPENAI_BASE_URL || 'https://api.openai.com/v1').replace(/\/+$/, ''),
     rateMax: Number.isFinite(rate) && rate > 0 ? rate : 20,
   };
